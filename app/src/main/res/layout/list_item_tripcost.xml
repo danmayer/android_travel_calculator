@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/cost_title"
+        android:id="@+id/cost_title"
+        android:layout_weight="3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:text="@string/cost_estimate"
+        android:id="@+id/cost_estimate"
+        android:layout_weight="3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delete_button"
+        android:id="@+id/trip_cost_delete_button"
+        android:paddingRight="16dp"
+        android:focusable="false"
+        android:onClick="tripCostDeleteClick"
+        android:layout_weight="1"/>
+</LinearLayout>
